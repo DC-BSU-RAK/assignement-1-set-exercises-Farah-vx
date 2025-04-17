@@ -1,0 +1,100 @@
+/* general body styles */
+body {
+    font-family: arial, sans-serif; /* sets the default font */
+    background-color: #cacaca; 
+    margin: 1px; /* small margin around the page */
+    color: #333; 
+    max-height: fit-content; /* adjust height to content */
+    max-width: fit-content; /* adjust width to content */
+}
+
+/* padding for the main content area */
+main {
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+/* style for horizontal rule */
+hr {
+    background-color: #2c342c;
+}
+
+/* styles for each image section container */
+.container {
+    margin-bottom: 40px; /* space below each container */
+    text-align: center; /* centers all content inside */
+    background-color: #2c342ce4; /* semi-transparent background */
+    margin-top: 40px; /* space above the container */
+    padding: 20px; /* inner spacing */
+    box-shadow: 8px 8px 20px #626e63; /* subtle drop shadow */
+}
+
+/* main heading style */
+h1 {
+    font-size: 3em; /* large font size */
+    margin-bottom: 0px;
+    color: #2c342c; 
+    text-align: center;
+    text-shadow: 2px 1.5px 8px #e8e8e8; /* soft shadow */
+    background-color: white;
+}
+
+/* section headings */
+h2 {
+    font-size: 2em;
+    margin-top: -9px;
+    margin-bottom: 2rem;
+    color: #e8e8e8; /* text color */
+    text-shadow: 2px 4px 8px #000000; /* bold black shadow */
+}
+
+/* image box container */
+.img-box {
+    display: flex; /* flex layout for side-by-side images */
+    justify-content: center; /* centers images */
+    gap: 20px; /* space between images */
+    flex-wrap: wrap; /* allows wrapping on smaller screens */
+    height: auto;
+    width: 1000px;
+    margin-left: -2px;
+}
+
+/* base image styles */
+img {
+    border-radius: 10px; /* rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* soft shadow */
+    width: 450px;
+    height: 300px;
+}
+
+/* adding filter for first image */
+.filter1 {
+    filter: grayscale(100%) contrast(1.2);
+}
+
+/* adding filter to second image */
+.filter2 {
+    filter: sepia(85%);
+}
+
+/* adding filter to third image */
+.filter3 {
+    filter: brightness(4);
+}
+
+/* license text under each image set */
+.license {
+    margin-top: 10px;
+    margin-bottom: -10px;
+    padding: 10px;
+    font-size: 0.9em; /* slightly smaller text */
+    color: #ffffff; 
+}
+
+/* styling for section titles */
+.border {
+    background-color: #2c342c;
+    border-radius: 10px;
+    padding: 8px;
+}
+

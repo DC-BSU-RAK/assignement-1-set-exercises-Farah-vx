@@ -1,0 +1,36 @@
+/* style for the first div (div#A) */
+div:nth-of-type(1) {
+    background-color: white; /* sets the background to white */
+    border-color: rgb(113, 95, 214); /* sets the border color  */
+    color: black; /* sets the text color to black */
+    box-shadow: 10px 10px 15px rgba(255, 0, 0, 0.968); /* applies outer shadow with blur and offset */
+  }
+  
+  /* style for the second div (div#B) */
+  div:nth-of-type(2) {
+    background-color: white; /* sets the background  */
+    color: black; /* sets the text color to black */
+    border-color: rgb(105, 253, 55); /* sets a border color */
+    box-shadow: inset 10px 10px 10px rgb(0, 0, 0); /* adds an inner black shadow effect  */
+  }
+  
+  /* style for the third div (div#C) */
+  div:nth-of-type(3) {
+    background-color: white; /* sets the background */
+    color: black; /* sets the text color to black */
+    border-color: #ff9800; /* sets border color */
+    border-radius: 18px; /* rounded corners */
+    box-shadow: 
+      0 0 0 10px blue,  
+      0 0 0 20px red,  
+      0 0 0 30px green; /* to set layered shadow */
+  }
+  
+  /* style for the fourth div (div#D) */
+  div:nth-of-type(4) {
+    background-color: white; /* sets the background */
+    color: black; /* sets the text color to black */
+    border-color: brown; /* sets the border color */
+    text-shadow: 5px 5px 1px black; /* adds shadow behind the text */
+  }
+  

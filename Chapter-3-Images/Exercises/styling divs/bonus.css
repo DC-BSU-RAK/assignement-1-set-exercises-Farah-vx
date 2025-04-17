@@ -1,0 +1,19 @@
+/* style for all div elements */
+div {
+  display: inline-block; /* makes divs sit next to each other horizontally */
+  font-family: sans-serif; /* sets a clean, modern font */
+  font-size: 20px; /* sets the size of the text */
+  margin: 25px; /* adds space around each div */
+  border: 4px solid; /* adds a solid border (default color used) */
+  color: black; /* sets the text color to black */
+  line-height: 100px; /* vertically centers the text within the div */
+  text-align: center; /* horizontally centers the text */
+  width: 200px; /* sets a fixed width */
+  height: 200px; /* sets a fixed height */
+}
+
+/* style for the body element */
+body {
+  margin: 100px auto; /* adds vertical margin and centers content horizontally */
+  width: max-content; /* shrinks the body width to fit the content */
+}
