@@ -1,0 +1,52 @@
+/* style the entire page */
+body {
+    margin: 0; /* remove default margin */
+    height: 100vh; /* full viewport height */
+    background: linear-gradient(to right, #597272,#597272bd, #ddeee9); /* added multible colors for a horizontal gradient */
+    display: flex; /* enable flex layout */
+    flex-direction: column; /* stack items vertically */
+    justify-content: center; /* center items vertically */
+    align-items: center; /* center items horizontally */
+    font-family: 'Segoe UI', sans-serif; 
+}
+  
+/* style the paragraph above the video */
+p {
+    color: #344242; /* dark text color */
+    font-size: 2em; /* large font size */
+    margin-bottom: 40px; /* space below */
+    font-style: italic; /* italic text */
+}  
+  
+/* wrap and style the video container */
+.video-wrapper {
+    text-align: center; /* center the content */
+    background-color: #d1e7e189;
+    border: 1.6px solid #00796b; /* border size and color */
+    padding: 20px; /* space inside the box */
+    border-radius: 8px; /* rounded corners */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25); /* shadow */
+    backdrop-filter: blur(6px); /* blur background  */
+}
+  
+/* style the actual video element */
+video {
+    width: 100%; /* make video responsive */
+    max-width: 560px; /* limit size */
+    border-radius: 6px; /* slightly rounded corners */
+    outline: none; /* remove default outline */
+    transition: transform 0.3s ease; /* smooth hover zoom effect */
+}
+  
+/* zoom video slightly on hover */
+video:hover {
+    transform: scale(1.02);
+}
+  
+/* style the license/copyright note */
+.license {
+    font-size: 14px; 
+    color: black; 
+    margin-top: 10px; 
+    font-style: normal; 
+}

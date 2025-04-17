@@ -1,0 +1,126 @@
+/* sets the main font, background gradient, text color, spacing, and layout for the body */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #1f4e84d3, #37655dd2, #64a084d0);
+  color: #1b213f;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  max-height: 500px;
+}
+
+/* styles the main heading with space below and glow-like shadow */
+h1 {
+  margin-bottom: 30px;
+  text-shadow: 2px 0px 25px rgb(237, 237, 237);
+}
+
+/* adds a hover effect to the speak button to make it more interactive */
+#speak-btn:hover {
+  background-color: #244645;
+  color: #fff;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+/* lays out the main soundboard and text-to-speech sections side by side and spaced */
+.soundboard-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 50px;
+  size: 30px;
+}
+
+/* sets up a 3-column grid for displaying the sound samples */
+#sample-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  max-width: 600px;
+}
+
+/* styles each audio sample box with padding, rounded corners, and border */
+.sample {
+  background-color: #ffffff20;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: rgb(31, 43, 43);
+  border: 2px solid #000000;
+}
+
+/* adds hover effect to audio samples for better feedback */
+.sample:hover {
+  background-color: #272e54;
+  color: #000000;
+  border-color: #000;
+}
+
+/* bold text for the sample names */
+.sample-title {
+  font-weight: bold;
+}
+
+/* smaller text for the sample duration */
+.sample-duration {
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+
+/* styles the text-to-speech section with a max width and rounded border */
+.tts-section {
+  max-width: 300px;
+  border: 2px solid #000000;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+/* makes the textarea fill the container, keeps it clean and readable */
+textarea {
+  width: 100%;
+  height: 100px;
+  resize: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+/* default speak button styling */
+#speak-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #1a203d;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* styles for the pagination buttons */
+.nav-btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+/* styles the container that holds the audio samples */
+.sample-bank {
+  max-width: 600px;
+  padding: 20px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+}
+
+/* adds a subtle shadow to the "sample bank" subheading */
+.sample-bank h2 {
+  margin-top: -5px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(186, 186, 186, 0.5);
+}

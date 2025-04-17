@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alan Partridge Soundboard </title> <!-- page title shown in browser tab -->
+  <link rel="stylesheet" href="style.css"/> <!-- link to external stylesheet -->
+</head>
+<body>
+  <main> <!-- main content container -->
+    <h1>~ Alan Partridge Soundboard Sample ~</h1> <!-- main heading -->
+
+    <!-- container for the soundboard and text-to-speech section -->
+    <div class="soundboard-container">
+      
+      <!-- sound samples section -->
+      <section class="sample-bank">
+        <h2>Sample Bank</h2>
+        <div id="sample-grid"></div> <!-- where audio buttons/samples will be dynamically added -->
+      </section>
+
+      <!-- text-to-speech section -->
+      <aside class="tts-section">
+        <h2>Text to Speech</h2>
+        <textarea id="tts-input" placeholder="Type something..."></textarea> <!-- input area for text-to-speech section -->
+        <button id="speak-btn">Speak</button> <!-- triggers text-to-speech section functionality -->
+      </aside>
+    </div>
+
+    <!-- pagination buttons for switching between audio sample pages -->
+    <div class="pagination">
+      <button id="prev" class="nav-btn" hidden>&larr;</button> <!-- previous page button (hidden by default) -->
+      <button id="next" class="nav-btn">&rarr;</button> <!-- next page button -->
+    </div>
+  </main>
+
+  <script src="index.js"></script> <!-- link to external JavaScript file -->
+</body>
+</html>
