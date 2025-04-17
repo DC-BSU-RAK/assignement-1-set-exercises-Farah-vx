@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RGB Colour Guessing Game</title> <!-- page title that shows on the browser tab -->
+  <link rel="stylesheet" href="style.css" /> <!-- linking the external css file for styling -->
+</head>
+
+<body>
+  <main>
+    <h1>RGB Colour Guessing Game</h1> <!-- main heading of the game -->
+
+    <div id="rgbDisplay">rgb(??, ??, ??)</div> <!-- this displays the rgb value to guess -->
+
+    <div id="colorOptions"></div> <!-- color options will appear here dynamically -->
+
+    <p id="resultMessage"></p> <!-- shows whether the chosen color was correct or wrong -->
+
+    <div id="scoreLives">
+      <span id="score">Score: 0</span> <!-- displays the current score -->
+      <span id="lives">Lives: 3</span> <!-- displays the number of lives left -->
+    </div>
+
+    <button id="restartBtn" style="display: none;">Play Again</button> <!-- restart button, hidden at first -->
+  </main>
+
+  <script src="index.js"></script> <!-- linking the external js file for the game logic -->
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+/* Main page setup and look */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #434f6c, #11233f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;/* full screen height */
+}
+
+/* main white box where the game sits */
+main {
+  background-color: #ffffffcc;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 90%; /* responsive on smaller screens */
+}
+
+/* Heading */
+h1 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #1d3557;
+  margin-top: -20px;
+  font-style: oblique;
+}
+
+/* this shows the RGB code player has to guess */
+#rgbDisplay {
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color: #1d3557;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+/* the area where color boxes appear */
+#colorOptions {
+  display: flex;
+  justify-content: space-around;/* space between color boxes */
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* individual color choice box */
+.color-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid transparent; /* border changes on hover */
+  transition: transform 0.2s, border-color 0.3s;/* smooth animation */
+}
+
+/*when user hovers on a color box */
+.color-box:hover {
+  transform: scale(1.1); /* slight zoom effect */
+  border-color: #1d3557;
+}
+
+/* result message */
+#resultMessage {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* displays the current score and  remaining Lives */
+#scoreLives {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* button that shows up when the game ends */
+#restartBtn {
+  background-color: #1d3557;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for restart button */
+#restartBtn:hover {
+  background-color: #457b9d;
+}
+
+  

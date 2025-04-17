@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- sets the character encoding for the document -->
+    <meta charset="UTF-8">
+
+    <!-- ensures the site is responsive on different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title that appears on the browser tab -->
+    <title>RGB Game</title>
+
+    <!-- link to external css file for styling -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- link to external javascript file -->
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <!-- main container for all content -->
+    <div class="container">
+
+        <!-- main heading for the page -->
+        <h1>Petrol Calculator</h1>
+
+        <!-- input section for price and litres -->
+        <div class="holder">
+
+            <!-- input for petrol price -->
+            <div>
+                <p>Petrol price per litre </p>
+                <input id="Petrol_Price" placeholder="1.72" type="number" min="1.72">
+            </div>
+
+            <!-- input for number of litres -->
+            <div>
+                <p>Litre</p>
+                <input id="liters" placeholder="0" type="number" min="0">
+            </div>
+        </div>
+
+        <!-- section that holds the button and result -->
+        <div id="button">
+            <!-- button that triggers the calculation -->
+            <button onclick="calculate()">Calculate</button>
+
+            <!-- area to show the total result -->
+            <h2>Total Amount: <span id="totalAmount"></span></h2>
+        </div>
+    </div>
+</body>
+</html>
