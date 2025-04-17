@@ -1,0 +1,153 @@
+<!-- Declares the document is using HTML5 -->
+<!DOCTYPE html>
+<html lang="en"><!-- Root element, sets language to English -->
+<head>
+  <!-- Meta info about the document -->
+  <meta charset="UTF-8" /><!-- Sets character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- Ensures mobile responsiveness -->
+  <title>NomNom Haven </title> <!-- Title of the webpage shown in browser tab -->
+  
+
+  <!-- Google Fonts: Playfair Display for headings, Raleway for body text -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Internal CSS styles for layout, typography, and design -->
+  <style>
+    /* Page background, margins, and font styling */
+    body {
+      margin: 0 20px;
+      font-family: 'Raleway', sans-serif;
+      background-color: #fffaf6;
+      color: #333;
+    }
+
+
+    /* Main title (h1) styles */
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+      margin-top: 10px;
+      line-height: 1;
+      white-space: pre-line; /* Allows line breaks */
+      font-family: 'Playfair Display', serif;
+      color: #433a2c;
+      word-spacing: 6px;/* Extra space between words */
+      
+    }
+
+    /* Border style for the h1 inside a wrapper div */
+    .border h1 {border: 0.5px solid rgba(55, 50, 37, 0.916); padding: 20px; background-color:rgb(222, 218, 215);}
+
+    /* Subheading styles (h2) */
+    h2 {
+      font-family: 'Playfair Display', serif;
+      color: #433a2c;
+      font-size: 1.8rem;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    /* Smaller heading (h3) styling */
+    h3 {
+      text-align: center;
+      color: #4e342e;
+    }
+
+    /* Container for the paragraph/description block */
+    .description-container {
+      background-color:rgb(222, 218, 215);
+      border-radius: 12px;
+      padding: 30px 40px;
+      margin: 30px auto;
+      max-width: 800px;
+      text-align: justify;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Paragraph styling inside the description */
+    .description-container h4 {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #4e342e;
+      margin: 0;
+    }
+
+     /* Image styling: centered, rounded, responsive */
+    img {
+      display: block;
+      margin: 0 auto;
+      border-radius: 12px;
+      max-width: 100%;
+      height: auto;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Link styles (including the heading hover) */
+    a {
+      text-decoration: none;
+      color: #5a4d38;
+    }
+
+    a h2:hover {
+      color: #90837e;
+      transition: 0.3s;
+    }
+
+    /* Styled button-like link */
+    .button-link {
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 1.5rem;
+      padding: 10px 20px;
+      border: 2px solid #795548;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .button-link:hover {
+      background-color: #d7c7b0a9;
+    }
+
+    /* Divider line */
+    hr {
+      border: none;
+      border-top: 2px solid #d7ccc8;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+   <!-- Header with styled border and page title -->
+  <div class="border">
+  <h1>CHOCOLATE CHIP COOKIES RECIPE</h1></div>
+  
+  <!-- image of the cookies -->
+  <img src="https://images.stockcake.com/public/f/b/7/fb743fb1-0a01-4113-b4d6-45daa845d510/chocolate-chip-heaven-stockcake.jpg" alt="Chocolate chip cookies" width="500" height="250">
+
+  <!-- Subheading that describes the recipe theme -->
+  <h2>The Ultimate Chocolate Chip Cookie:<br> A Perfect Balance of Chewy, Crispy, and Gooey 🍪</h2>
+
+  <!-- Description block with details about the recipe experience -->
+  <div class="description-container">
+    <h4>
+      A chocolate chip cookie isn’t just a dessert—it’s a warm hug you can eat.<br>
+      This recipe brings you crispy golden edges, soft chewy centers, and pools of melted chocolate in every bite.<br>
+      Browning the butter enhances the flavor with nutty caramel notes.<br>
+      Topped with a sprinkle of flaky sea salt, these cookies hit the sweet-salty perfection.<br>
+      Whether fresh out of the oven or dipped in a glass of milk, they’re a classic with a gourmet twist.
+    </h4>
+  </div>
+
+  <!-- Call-to-action asking if user wants to see full recipe -->
+  <h3>Would you like the full recipe with precise measurements and steps?</h3>
+
+  <!-- Centered button link to another page (full recipe) -->
+  <div style="text-align: center;">
+    <a class="button-link" href="recipe.html" title="Full recipe">Click here for the full recipe 🍪</a>
+  </div>
+  <!-- Spacing at the bottom -->
+  <br>
+  <br>
+
+</body>
+</html>

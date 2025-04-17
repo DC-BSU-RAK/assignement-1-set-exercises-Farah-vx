@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <!-- Metadata and Styling for the page -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NomNom Haven</title>
+
+  <!-- Internal CSS Styling -->
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Raleway', sans-serif;
+      background-color:#fffaf6;
+      color: #333;
+    }
+
+    /* Styling for main title inside a bordered box */
+    .border h1 {
+      border: 0.5px solid rgba(55, 50, 37, 0.916);
+      padding: 20px;
+      background-color:rgb(222, 218, 215);
+    }
+
+    /* Container box to center content and add spacing */
+    .box {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    /* Section headers */
+    h2 {
+      font-family:'Courier New', Courier, monospace; 
+      font-size: 1.5rem;
+      border-bottom: 2px solid #34312b;
+      padding-bottom: 6px;
+      margin-bottom: 20px;
+      color: #532e09f1;
+    }
+
+    /* Description paragraph under the main title */
+    p.description {
+      font-size: 1.2rem;
+      text-align: center;
+      margin: 20px 0;
+      color: #444;
+    }
+
+    /* Recipe images with consistent size and visual style */
+    img.recipe-img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      border-radius: 10px;
+      margin: 20px 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    /* Section containers with background and shadow */
+    .section {
+      background: rgb(222, 218, 215);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
+    /* List padding */
+    ol, ul {
+      padding-left: 20px;
+    }
+
+    /* List item spacing */
+    li {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+
+    /* Italic style for cookie tips */
+    .tips li {
+      font-style: italic;
+    }
+
+    /* Footer styling */
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 0.9rem;
+      color: #999;
+    }
+
+    footer h1 {
+      color: #5a2805;
+    }
+
+    /* Repeated image style to ensure consistency */
+    img.recipe-img {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Centered header title inside a bordered section -->
+  <center>
+    <br>
+    <div class="border">
+      <h1 style ="color:rgba(70, 48, 11, 0.918)"><i>Chocolate chip cookies!</i></h1> 
+    </div>
+  </center>
+  
+  <!-- Main container box for recipe content -->
+  <div class="box">
+
+    <!-- Description section with intro and featured image -->
+    <div class="section">
+      <p class="description"><b>
+        These cookies are soft, chewy, and packed with melty chocolate chips. A perfect treat for every occasion!
+      </b></p>
+      <br><br>
+      <center>
+        <!-- First image of finished cookies -->
+        <img class="recipe-img first-image" src="https://bakesbybrownsugar.com/wp-content/uploads/2024/02/Chocolate-Chip-Pecan-Cookies-48-500x500.jpg" alt="Finished cookies"> 
+      </center>
+    </div>
+    <br><br>
+    
+    <!-- Instructions section with images embedded between steps -->
+    <div class="section">
+      <h2>Instructions</h2>
+      <ol>
+        <li><b>Prepare the Dry Ingredients:</b> In a medium bowl, whisk together the flour, baking soda, and salt.</li>
+        <li><b>Mix the Wet Ingredients:</b> In a large bowl, whisk the melted butter, brown sugar, and granulated sugar until smooth.</li>
+        <li>Add the eggs one at a time, whisking well after each. Stir in the vanilla extract.</li>
+        <li><b>Combine Wet & Dry:</b> Gradually mix in dry ingredients. Fold in chocolate chips and nuts (if using).</li>
+        <li><b>Chill the Dough:</b> Cover and chill for 30–60 minutes (for chewier cookies).</li>
+        <li><b>Bake:</b> Preheat oven to 350°F (175°C), scoop dough onto parchment-lined baking sheet.</li>
+        <!-- Step image: scooping dough -->
+        <img class="recipe-img" src="https://live.staticflickr.com/3266/2343792203_fc1ce69c58_b.jpg" alt="Scooping the dough">
+        <li>Bake 10–12 minutes until edges are golden and center is soft.</li>
+        <!-- Step image: cookies in oven -->
+        <img class="recipe-img" src="https://live.staticflickr.com/2192/2129590208_5638edf042_c.jpg" alt="Cookies baking">
+        <li><b>Cool:</b> Let cool on tray 5 mins, then move to wire rack.</li>
+        <!-- Step image: cooling cookies -->
+        <img class="recipe-img" src="https://live.staticflickr.com/4147/5025157154_07c5fb7113_b.jpg" alt="Cooling cookies">
+        <li>Sprinkle with sea salt (optional), serve warm or store for up to 1 week.</li>
+        <!-- Final image: cookies with sea salt -->
+        <img class="recipe-img" src="https://live.staticflickr.com/654/22710949831_6112beb586_z.jpg" alt="Finished cookies with sea salt">
+      </ol>
+    </div>
+
+    <!-- Tips section using unordered list -->
+    <div class="tips">
+      <h2><i>*Tips for the Best Cookies*</i></h2>
+      <ul>
+        <li>Melted butter = chewier cookies, softened butter = fluffier cookies.</li>
+        <li>Use high-quality chocolate for rich flavor.</li>
+        <li>Remove slightly underbaked for gooey centers.</li>
+        <li>Bake longer (about 14 min) for crispier cookies.</li>
+      </ul>
+    </div>
+
+    <!-- Ingredients section with a breakdown of types -->
+    <div class="section">
+      <h2>Ingredients</h2>
+      <!-- Ingredient image -->
+      <img class="recipe-img" src="https://pd.w.org/2024/11/964672a81e00013e7.79134756.jpg" alt="Ingredients display">
+      <ul>
+        <b>Dry Ingredients:</b>
+        <li>2 ¼ cups (280g) all-purpose flour</li>
+        <li>1 teaspoon baking soda</li>
+        <li>½ teaspoon salt</li>
+        <br><b>Wet Ingredients:</b>
+        <li>1 cup (230g) unsalted butter, melted & slightly cooled</li>
+        <li>¾ cup (150g) brown sugar, packed</li>
+        <li>½ cup (100g) granulated sugar</li>
+        <li>2 large eggs</li>
+        <li>2 teaspoons vanilla extract</li>
+        <br><b>Chocolate & Extras:</b>
+        <li>1 ½ cups (270g) semi-sweet chocolate chips (or chunks)</li>
+        <li>(Optional) ½ cup chopped nuts (walnuts or pecans)</li>
+        <li>(Optional) Flaky sea salt for sprinkling</li>
+      </ul>
+    </div>
+
+    <!-- Footer with copyright notice -->
+    <footer>
+      <h1><b><tt>THANK YOU FOR VISITING!!</tt></b></h1>
+      <p>&copy; 2025 NomNom Haven 🍪</p>
+    </footer>
+
+  </div>
+</body>
+</html>

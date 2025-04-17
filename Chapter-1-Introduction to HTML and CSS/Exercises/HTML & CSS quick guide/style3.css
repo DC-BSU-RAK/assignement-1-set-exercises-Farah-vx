@@ -1,0 +1,149 @@
+/* Base Body Styling */
+body {
+    margin: 0px; /* Removes default margin around the body */
+    font-family: Arial, Helvetica, sans-serif; /* Sets fallback sans-serif fonts */
+    background-color: #f9f9f9; /* Light gray background */
+    color: #333; /* Dark gray text for good readability */
+}
+
+/*  Main Container Styling  */
+main {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1000px; /* Centers content and limits its width */
+}
+
+/*  Main Heading Styling  */
+h1 {
+    text-align: center; /* Center-aligns the main heading */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean modern font */
+    letter-spacing: 1.5px; /* Adds spacing between characters */
+    font-size: 2em; /* Sets font size */
+    margin-top: -3px;
+    margin-bottom: 0px;
+    color: rgb(45, 58, 70); /* heading color */
+}
+
+/*  Border styling for h1 inside a .border class  */
+.border h1 {
+    border: rgba(84, 100, 115, 0.678); 
+    padding: 20px;
+    background-color: rgba(97, 117, 140, 0.363); /* Light transparent background */
+}
+
+/*  Alignment Utility Class  */
+.align {
+    text-align: left;
+    font-size: 2.5em; /* Large text, likely used for sub-headings */
+}
+
+/*  Navigation Bar Styling  */
+.navbar ul {
+    list-style-type: none; /* Removes bullet points */
+    background-color: rgb(29, 40, 54); /* Dark blue background */
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    display: flex; /* Makes nav items flexible */
+    justify-content: center; /* Centers nav items horizontally */
+}
+
+/*  Navigation Links Styling  */
+.navbar a {
+    color: whitesmoke; /* Light text */
+    text-decoration: none; /* Removes underline */
+    padding: 15px 20px; /* Space around links */
+    display: block;
+    text-align: center;
+    transition: 0.3s; /* Smooth transition on hover */
+}
+
+/*  Hover Effect for Navbar  */
+.navbar a:hover {
+    background-color: black; /* Changes background on hover */
+}
+
+/*  Individual Navbar List Items  */
+.navbar li {
+    float: none; /* Ensures no float issues (especially useful with flex) */
+}
+
+/*  Box Container Styling  */
+.box {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean, readable font */
+    font-size: 1.1em; /* Slightly larger text */
+    line-height: 1.6; /* Improves text readability */
+    margin-bottom: 30px;
+    color: rgb(29, 41, 54); /* Soft navy color */
+    background-color: #fafafa; /* Off-white background */
+    padding: 20px;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.196); /* Soft shadow for depth */
+}
+
+/*  Heading Styling (h2 and h3)  */
+h2 {
+    color: rgba(50, 63, 78, 0.888); /* adding color to (h2)*/
+}
+
+h3 {
+    color: rgb(62, 77, 92); /* adding color to (h3) */
+}
+
+/*  Unordered List Styling  */
+ul {
+    padding-left: 20px; /* Indents bullet lists */
+}
+
+/*  Sub-heading Styling  */
+h4 {
+    font-weight: normal;
+    line-height: 1.6;
+    font-size: 1.5em; /* Medium heading size */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Serif font for a traditional look */
+}
+
+/*  Section Margin  */
+section {
+    margin-top: 40px; /* Adds spacing between sections */
+}
+
+/*  Preformatted Text Styling  */
+pre {
+    background-color: #f2f6f9f1; /* Light gray-blue background */
+    padding: 10px;
+    overflow-x: auto; /* Horizontal scroll for long code lines */
+    border-left: 4px solid #c1c1c2c3; /* Decorative left border */
+    font-size: 0.95em; /* Slightly smaller text */
+}
+
+/*  Inline Code Styling  */
+code {
+    font-family: 'Courier New', Courier, monospace; /* Monospace for code */
+    color: #3a4778; /* Navy blue text */
+    background-color: #f2f6f9; /* Light background */
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+/*  Responsive Styling for Tablets and Smaller Screens  */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: center;
+    }
+
+    .navbar a {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    main {
+        margin: 20px; /* Add some margin around main content */
+    }
+}
+
+/*  Footer Styling  */
+footer {
+    text-align: center;
+    font-size: small; /* Smaller text for footer */
+}

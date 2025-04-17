@@ -1,0 +1,170 @@
+ <!-- Declares the document type and version of HTML -->
+<!DOCTYPE html>
+<html lang="en"> <!-- Root element of the HTML document, with English as the language -->
+
+<head>
+    <!-- Contains meta-information about the document -->
+    <meta charset="UTF-8"> <!-- Sets the character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsive design on all devices -->
+    <title>Quick Code</title> <!-- Sets the title of the page shown in the browser tab -->
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="style3.css">
+</head>
+<!-- Contains all the visible content of the webpage -->
+<body>
+    <!-- Page title with a styled border -->
+    <div class="border">
+    <h1>HTML & CSS Quick Reference Guide</h1>
+    </div>
+
+    <!-- Navigation bar with internal links -->
+    <nav class="navbar">
+    <ul>
+        <li><a href="#What-is-HTML">What is HTML</a></li> <!-- Link to HTML section -->
+        <li><a href="#what-is-css">What is CSS</a></li><!-- Link to CSS section -->
+        <li><a href="#How-it-works">How it works</a></li><!-- Link to combined section -->
+    </ul>
+
+    </nav>
+
+     <!-- Main content area -->
+    <main>
+        <!-- HTML Introduction Section  with styling element -->
+        <h1 class="align"><tt> Introduction to HTML.</tt></h1>
+        <section id="What-is-HTML">
+
+    <!-- Section: What is HTML -->
+    <h2> What is HTML?</h2>
+    <p>HTML stands for Hyper Text Markup Language</p>
+    <p>HTML is the<b> foundation</b> of every webpage. It tells the browser what content to show and how it's structured.</p>
+    <br>
+    <p>HTML is used to:</p>
+     <ul>
+        <li>Add <b>text</b> (headings, paragraphs)</li>
+        <li>Insert <b>images</b></li>
+        <li>Create <b>links</b></li>
+        <li>Organize content into <b>sections</b>, <b>lists</b>, or <b>tables</b></li>
+        <li>Add <b>forms</b> for user input</li>
+     </ul>
+
+    <!-- List of common HTML tags -->
+    <h2> HTML Tags</h2>
+      <div class="box">
+        <ul>
+          <li><b>&lt;html&gt;</b> - Root element of a webpage</li>
+          <li><b>&lt;head&gt;</b> - Contains metadata and links</li>
+          <li><b>&lt;title&gt;</b> - Sets the page title</li>
+          <li><b>&lt;body&gt;</b> - Contains visible page content</li>
+          <li><b>&lt;h1&gt; to &lt;h6&gt;</b> - Headings, largest to smallest</li>
+          <li><b>&lt;p&gt;</b> - Paragraph</li>
+          <li><b>&lt;a&gt;</b> - Anchor for hyperlinks</li>
+          <li><b>&lt;img&gt;</b> - Displays an image</li>
+          <li><b>&lt;ul&gt;</b>, <b>&lt;ol&gt;</b>, <b>&lt;li&gt;</b> - Lists</li>
+          <li><b>&lt;div&gt;</b> - Generic container for content</li>
+        </ul>
+
+        <!-- Example of HTML structure/code usage-->
+        <div class="box">
+      <h3>Example:</h3>
+      <pre><code>&lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+&lt;p&gt;This is a simple webpage using HTML.&lt;/p&gt;
+&lt;img src="image.jpg" alt="A sample image"&gt;</code></pre>
+        </div>
+    </section>
+
+    <!-- CSS Introduction Section -->
+    <section id="what-is-css">
+      <h1 class="align"> Introduction to CSS</h1>
+      <h2> What is CSS ?</h2>
+      <p>CSS stands for Cascading Style Sheets</p>
+      <p>CSS controls the <b>appearance</b> of your website. It makes your website look <b>Exquisite and professional</b>.</p>
+      <p><b>Think of it like:</b> The design, paint, and layout that goes over the HTML body.</p>
+      <br>
+      <p>CSS is used to:</p>
+
+       <!-- listing the uses of CSS -->
+      <ul>
+        <li>Set <b>colors</b> and <b>fonts</b></li>
+        <li>Change <b>layouts</b> (like grids or flexboxes)</li>
+        <li>Add <b>spacing</b> with margin/padding</li>
+        <li>Add <b>borders</b>, <b>shadows</b>, <b>hover effects</b></li>
+        <li>Make the page <b>responsive</b> to different devices</li>
+      </ul>
+      <br>
+      <!-- listing css properties-->
+      <h2> CSS Properties</h2>
+      <div class="box">
+        <ul>
+          <li><b>color</b> - Text color</li>
+          <li><b>background-color</b> - Background color</li>
+          <li><b>font-family</b> - Typeface of the text</li>
+          <li><b>font-size</b> - Size of the text</li>
+          <li><b>margin</b> - Space outside elements</li>
+          <li><b>padding</b> - Space inside elements</li>
+          <li><b>border</b> - Border around elements</li>
+          <li><b>box-shadow</b> - Shadow effect</li>
+        </ul>
+
+      <!-- Example of CSS usage/styling -->
+      <div class="box">
+      <h3>Example:</h3>
+      <pre><code>body {
+  background-color: #f0f0f0;
+  font-family: 'Arial', sans-serif;}
+
+h1 {
+  color: #3498db;
+  text-align: center;}
+      </div>
+
+</code></pre>
+      </div>
+    </section>
+
+    <!--Showing explaining how HTML and CSS work together -->
+    <section id="How-it-works">
+      <h2> How HTML and CSS Work Together</h2>
+      
+      <p>Here’s how it fits:</p>
+      <ul>
+        <li>HTML adds <b>content</b></li>
+        <li>CSS styles that content to make it look good</li>
+      </ul>
+      <br>
+
+      <!-- Combined HTML and CSS example -->
+      <div class="box">
+      <h3>Combined Example:</h3>
+      <!-- using "&lt;&gt" and putting a tag/element in between to show code examples-->
+      <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;My Styled Page&lt;/title&gt;
+  &lt;style&gt;
+    body {
+      background-color: #fff8dc;
+      font-family: Verdana, sans-serif;
+    }
+    h1 {
+      color: #800000;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Hello, World!&lt;/h1&gt;
+  &lt;p&gt;This is a simple webpage.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        
+    
+        </section>
+    </div>
+
+    </main>
+    <!-- Footer section at the bottom of the page-->
+    <footer>
+        <p>&copy; 2025 Quick HTML & CSS Guide</p><!-- copyright-->
+      </footer>
+    
+</body>
+</html>
