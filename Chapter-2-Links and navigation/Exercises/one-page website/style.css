@@ -1,0 +1,119 @@
+body{
+    margin:opx; /* removes default margin */
+    font-family: Arial, Helvetica, sans-serif;/* sets default font */
+    background-color: #f9f9f9;/* background colour for the whole page*/
+    color:#333/* text colour*/
+  
+}
+
+/* main content container */
+main{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1000px;/* limits the width of the content */
+}
+
+
+/* main heading */
+h1{text-align:center; /* centers the heading */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1.5px;/* spacing between letters */
+    font-size:3em; /* incrementing heading size */
+    margin-top: 20px;
+    color:rgb(37, 49, 43)/* colour of the heading*/
+}
+    
+/* navigation bar container */
+.navbar ul{
+    list-style-type:none;/* removes bullet points */
+    background-color:rgb(43, 60, 47);
+    padding:0px;
+    margin:0px;
+    overflow: hidden;
+    display:flex; /* lays out items in a row */
+    justify-content: center;/* centers the nav links */
+}
+
+/* styling for each link */
+.navbar a{
+    color: white;/* text colour of navbar*/
+    text-decoration: none;/* removes underline */
+    padding: 15px 20px;/* spacing around text */
+    display:block;
+    text-align: center;
+    transition: 0.3s; /* smooth transition on hover */
+}
+    
+/* hover effect on nav links */
+.navbar a:hover{
+    background-color: black;/* changes background of the hover */
+}
+
+/* nav list item */
+.navbar li{
+    float:none;/* ensures items don't float left/right */
+}
+
+/* overview content box */
+.overview{
+    font-family: 1.1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;/* space between lines */
+    color: #333; 
+    background-color: #f9f9f9; 
+    padding: 20px; 
+    border-radius: 12px; /* rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.066); /* soft shadow */
+}
+
+/* button styling */
+.button{
+    font-size: 22px;
+    background-color: rgba(75, 95, 81, 0.811);
+    font-family:'Courier New', Courier, monospace;
+    border-radius: 25px; /* rounded corners */
+    border-color: rgb(37, 49, 43);
+    padding:10px 20px ;
+    margin-bottom: 20px;
+    display:inline-block ;
+    color: whitesmoke;
+    cursor: pointer;/* changes cursor to pointer on hover */
+    transition:0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.491) ;/* deep shadow */
+}
+
+/* button hover effect */
+.button:hover{
+    transform: translateY(-2px); /*slightly lifts the button */
+    background-color:  rgba(85, 103, 90, 0.934);
+}
+
+/* section title colors */
+h2{color:rgb(53, 66, 58);}
+
+h3{color: rgba(66, 84, 72, 0.842);}
+
+/* indentation for lists */
+ul{ padding-left: 20px;}
+
+/* subheading styling */
+h4{
+    font-weight: normal;
+    line-height: 1.6;
+    font-size: 1.5;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* spacing between sections */
+section{ margin-top: 40px;}
+
+/* responsive layout for small screens */
+@media (max-width: 768px)
+{
+.navbar ul {
+    flex-direction: column;
+    align-items: center;}
+
+.navbar a { padding: 10px;}
+
+main { margin: 20px;}}
