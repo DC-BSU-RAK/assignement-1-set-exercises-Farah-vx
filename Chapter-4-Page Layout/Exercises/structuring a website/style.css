@@ -1,0 +1,140 @@
+/* styling to recreate the page */
+body {
+    margin: 0.3rem; /* sets margin for the body */
+    font-family: Arial, sans-serif; /* sets the font for the body */
+    background-color: #ffffff; /* sets background color */
+    color: #000000; /* sets text color */
+    height: 97vh; /* makes the body take up 97% of the viewport height */
+    display: flex; /* uses flexbox for layout */
+    flex-direction: column; /* arranges children elements in a column */
+    overflow: hidden; /* hides any content that overflows the body */
+}
+  
+/* customizing Header */
+header {
+    background-color: #17072b; /* sets header background color */
+    color: white; /* sets text color for header */
+    text-align: center; /* centers the text */
+    padding:10px 10px; /* adds padding around the header text */
+}
+
+header h1 {
+    font-family: Tahoma, sans-serif; /* changes the font for the header */
+    font-weight: 580; /* makes the header text slightly bold */
+    font-size: 2.1rem; /* increases font size */
+    text-decoration: underline; /* underlines the header text */
+    margin: 1; /* adds margin around the header */
+}
+
+/* Navbar style */
+nav {
+    background-color: #17072b; /* sets background color for the navbar */
+    display: flex; /* uses flexbox to arrange items */
+    justify-content: center; /* centers the navbar items */
+    padding: 1px 0; /* adds padding to navbar */
+}
+  
+nav ul {
+    list-style: none; /* removes list bullets */
+    display: flex; /* arranges the items in a row */
+    gap: 1.5rem; /* adds space between the items */
+    padding: 0; /* removes padding */
+    margin: 0; /* removes margin */
+}
+  
+nav li {
+    margin: 0; /* removes margin from list items */
+}
+  
+nav a {
+    color: white; /* sets link color */
+    text-decoration: none; /* removes underlines from links */
+    font-size: 1.5rem; /* increases font size of links */
+}
+  
+/* Main content styling */
+main {
+    display: flex; /* uses flexbox for layout */
+    justify-content: space-between; /* spaces out the content */
+    padding: 1rem 1.5rem; /* adds padding around main content */
+    flex: 1; /* allows the main content to take up available space */
+    box-sizing: border-box; /* includes padding in element's total width/height */
+    overflow: hidden; /* hides any content that overflows the main area */
+}
+  
+section {
+    flex: 2; /* gives section 2 times more space than aside */
+    margin-right: 1rem; /* adds margin to the right */
+    overflow: hidden; /* hides any content that overflows */
+    word-spacing: 0.4rem; /* adds space between words */
+    font-size: 18.5px; /* sets font size for section text */
+}
+  
+aside {
+    flex: 1; /* gives aside 1 unit of space */
+    background-color: #172d67; /* sets background color */
+    color: white; /* sets text color */
+    padding: 1rem; /* adds padding inside the aside */
+    overflow: hidden; /* hides overflowing content */
+    display: flex; /* uses flexbox for layout */
+    flex-direction: column; /* arranges items vertically */
+    justify-content:space-evenly; /* evenly spaces the content */
+    height: 340px; /* sets fixed height for aside */
+}
+
+aside ul{
+    padding-left: 0.5rem; /* adds padding to the left */
+    list-style-type:"-"; /* sets custom bullet style */
+}
+  
+h2 {
+    font-family: Tahoma, sans-serif; /* changes font for subheadings */
+    font-weight: 550; /* makes subheading text slightly bold */
+    text-decoration: underline; /* underlines the subheading */
+    margin-top: 0; /* removes margin above h2 */
+    font-size: 1.7rem; /* increases font size */
+}
+  
+section img {
+    width: 100%; /* makes image width 100% of its container */
+    max-width: 1000px; /* limits maximum width of image */
+    height: 800px; /* sets fixed height */
+    margin-top: 0.5rem; /* adds margin above image */
+    display: block; /* displays the image as a block */
+    max-height: 250px; /* sets a maximum height */
+}
+
+/* using <aside> to style Images to be next to each other proportionately */
+aside .box-images {
+    display: flex; /* arranges the images in a row using flexbox */
+    justify-content: space-between; /* spaces out the images */
+    gap: 8px; /* adds space between the images */
+    margin-top: 0.5rem; /* adds margin to the top */
+    flex-wrap: nowrap; /* prevents images from wrapping to next line */
+}
+  
+aside .box-images img {
+    width: 160px; /* sets image width */
+    height: 160px; /* sets image height */
+    object-fit: cover; /* ensures image covers the area without distortion */
+    border-radius: 4px; /* rounds the corners of the image */
+    flex: 1; /* ensures equal space distribution for the images */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #8c15e9; 
+    color: white; 
+    text-align: center; /* centers the text */
+    padding: 0px; /* removes padding */
+    font-size:14px; /* sets font size */
+    height: auto; /* allows height to adjust automatically */
+    line-height: 6px; /* sets line height */
+    flex-shrink: 0; /* prevents footer from shrinking */
+    margin-top: auto; /* positions the footer at the bottom */
+    margin-bottom: auto; /* centers the footer vertically */
+}
+
+ul{
+    margin-top: -10px; /* adds margin to the top of the list */
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Planner - Web Development Module</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- links an external CSS stylesheet to style the page -->
+</head>
+
+<body>
+    <!-- main visible content of the page -->
+
+    <header>
+        <!-- contains the page header -->
+        <h1>Study Planner</h1>
+        <!-- main heading of the page -->
+    </header>
+
+    <nav class="navbar">
+        <!-- non-functional bar for linking different sections of the page -->
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <!-- link to the home section -->
+            <li><a href="#plan">Study Plan</a></li>
+            <!-- link to the study plan section -->
+            <li><a href="#resources">Resources</a></li>
+            <!-- link to the resources section -->
+            <li><a href="#contact">Contact</a></li>
+            <!-- link to the contact section -->
+        </ul>
+    </nav>
+
+    <main>
+        <!-- container for the main content of the page -->
+
+        <section class="intro"><!-- section for the welcome message -->
+            <h2>Welcome to Your Study Planner</h2> <!-- secondary heading -->
+          <!-- short introductory paragraph -->
+            <p>Manage your study plan for the Web Development module effectively.</p>
+            
+        </section>
+
+        <section class="study-plan">
+            <!-- section for displaying the study plan -->
+            <h2>Your Study Plan</h2>
+            <div class="columns">
+                <!-- flex container holding each week's column -->
+
+                <div class="column">
+                    <!-- column for week 1 -->
+                    <h3>Week 1</h3>
+                    <ul>
+                        <li>Introduction to HTML</li>
+                        <li>Basic CSS Styling</li>
+                        <li>Responsive Design Principles</li>
+                    </ul>
+                </div>
+
+                <div class="column">
+                    <!-- column for week 2 -->
+                    <h3>Week 2</h3>
+                    <ul>
+                        <li>JavaScript Basics</li>
+                        <li>DOM Manipulation</li>
+                        <li>Event Handling</li>
+                    </ul>
+                </div>
+
+                <div class="column">
+                    <!-- column for week 3 -->
+                    <h3>Week 3</h3>
+                    <ul>
+                        <li>Introduction to Frameworks</li>
+                        <li>Building a Simple Web App</li>
+                        <li>Version Control with Git</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="resources">
+            <!-- section for extra resources -->
+            <h2>Additional Resources</h2>
+            <p>Explore more resources to enhance your learning.</p>
+            <a target="_blank" href="https://www.w3schools.com/html/default.asp">
+                <!-- external link that opens in a new tab -->
+                <button class="button">View Resources</button>
+                <!-- styled button linking to more resources -->
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <!-- footer content shown at the bottom of the page -->
+        <p>&copy; 2023 Creative Computing Course. All rights reserved.</p>
+        <!-- copyright text -->
+    </footer>
+</body>
+
+</html>
